@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.Ayah.models.users;
 import com.Ayah.util.Connectionsutil;
 
 public class AuthDAO {
@@ -14,7 +15,7 @@ public class AuthDAO {
 	//This DAO would likely have other methods like register user, or update user info
 	//but we just need a login for P0 and P1.
 	
-	public boolean login(String username, String password) {
+	public users login(String username, String password) {
 		
 		try(Connection conn = Connectionsutil.getConnection()){
 			
@@ -28,16 +29,26 @@ public class AuthDAO {
 		ResultSet rs = ps.executeQuery();
 		
 		//if anything gets returned at all, we know a user exists with that username/password pair. so we can return true
+		
+		//Create a user object to send to the front end
 		if(rs.next()) {
-			return true;
+			
+			users u = new users (
+					
+					rs.getString("username"),
+					rs.getString("password")
+					
+					);
+					return u;
 		}
 			
 		} catch (SQLException e) {
 			System.out.println("LOGIN FAILED");
 			e.printStackTrace();
 		}
+		return null;
 		
-		return false;
+		
 		
 	}
 	
