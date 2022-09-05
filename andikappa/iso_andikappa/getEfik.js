@@ -3,6 +3,8 @@ const url = "http://localhost:7778/kappa"
 document.getElementById("submit").onclick = getefikword
 
 async function getefikword(){
+    
+    document.getElementById("tablebody").innerHTML = ""
 let efikword = document.getElementById("efikword").value
 console.log("hii")
     let response = await fetch (url + "/ikoh/getEfik/" + efikword,{
