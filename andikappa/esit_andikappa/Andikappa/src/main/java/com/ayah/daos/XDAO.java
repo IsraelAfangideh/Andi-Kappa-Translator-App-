@@ -16,9 +16,13 @@ import com.ayah.models.X;
 @EnableJpaRepositories
 public interface XDAO extends JpaRepository <X, Integer>{
 
-	public Optional<List<X>>findByEfikword(String efikword);
+	public Optional<List<X>> findByEfikwordOrEnglishword(String englishword, String efikword);
+
+	public Optional <List<X>> findByEnglishword(String englishword);
+
+	public Optional <List<X>> findByEfikword(String efikword);
 ////	
 ////	public Optional<List<X>>findbyenglishword(String englishword);
-////	
-////	public Optional<List<X>>findByTranslationId(Integer xid);
+
+	// public Optional<List<X>>findById();
 }

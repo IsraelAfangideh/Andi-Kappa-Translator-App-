@@ -1,13 +1,15 @@
 const url = "http://localhost:7778/kappa"
 
+
 document.getElementById("submitNewTranslation").onclick = addtranslation
 
 async function addtranslation () {
 
-var englishword = document.getElementById("englishword").value.toLowerCase
-let efikword = document.getElementById("efikword").value.toLowerCase
-let wordtype = document.getElementById("wordtype").value.toLowerCase
-let context = document.getElementById("context").value.toLowerCase
+var englishword = document.getElementById("englishword").value
+console.log(englishword)
+let efikword = document.getElementById("efikword").value
+let wordtype = document.getElementById("wordtype").value
+let context = document.getElementById("context").value
 
 // let englishword = englishwordmixedcase.toLowerCase()
 // let efikword = efikwordmixedcase.toLowerCase()
@@ -22,12 +24,16 @@ let translationjson = {
         "context": context
 }
 
-
+console.log(translationjson)
     let response = await fetch(url + "/ikoh",{
-
         method: "POST",
+      
         body: translationjson,
-        credentials: "same-origin"
+        credentials: "same-origin",
+        headers: { 
+            'Accept': 'application/json',
+            'Content-Type': 'application/json' 
+        }
     })
 
 
