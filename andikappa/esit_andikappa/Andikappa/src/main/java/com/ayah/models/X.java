@@ -5,6 +5,10 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatTypes;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -13,6 +17,8 @@ import javax.persistence.Id;
 	@Entity
 	@Component
 	@Table(name = "x")
+	@JsonFormat(shape = JsonFormat.Shape.STRING)
+	// @JsonPropertyOrder({ "englishword", "efikword", "wordtype", "context" })
 	public class X {
 		
 		@Id

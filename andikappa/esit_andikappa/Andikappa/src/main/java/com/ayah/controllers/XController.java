@@ -21,7 +21,7 @@ import com.ayah.models.X;
 
 
 @RestController
-@RequestMapping(value = "/ikoh")
+@RequestMapping(value = "/ikoh", produces = "application/json")
 @CrossOrigin
 public class XController {
 
@@ -34,7 +34,7 @@ public class XController {
 	}
 	
 	//Add New Translation
-	@PostMapping
+	@PostMapping(value = "/add")
 	public ResponseEntity addX(@RequestBody X x) {
 		
 		//We use the save method to do inserts
