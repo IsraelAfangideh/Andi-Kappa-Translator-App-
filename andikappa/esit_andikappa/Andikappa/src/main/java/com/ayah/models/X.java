@@ -1,11 +1,10 @@
-package com.ayah.daos;
+package com.ayah.models;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-import com.ayah.models.Users;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatTypes;
@@ -41,7 +40,7 @@ import javax.persistence.ManyToOne;
 		private String context;
 
 		@ManyToOne
-		@JoinColumn(name = "userid")
+		@JoinColumn(name = "addedbyuser")
 		private Users user;
 
 		public X() {

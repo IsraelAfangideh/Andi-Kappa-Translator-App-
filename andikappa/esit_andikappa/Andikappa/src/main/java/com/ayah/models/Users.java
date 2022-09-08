@@ -12,7 +12,6 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-import com.ayah.daos.X;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity

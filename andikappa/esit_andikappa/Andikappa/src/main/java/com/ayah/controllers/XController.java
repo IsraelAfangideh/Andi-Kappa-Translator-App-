@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ayah.daos.X;
 import com.ayah.daos.XDAO;
+import com.ayah.models.X;
 
 
 
@@ -38,9 +38,10 @@ public class XController {
 	public ResponseEntity addX(@RequestBody X x) {
 		
 		//We use the save method to do inserts
-		
+	
+
 		X newX = xd.save(x);
-		
+		System.out.println(newX);
 		if (newX == null) {
 			return ResponseEntity.badRequest().build();
 		}
@@ -67,7 +68,7 @@ public class XController {
 	//Get by English Word
 	@GetMapping(value = "/getEnglish/{englishword}")
 	public ResponseEntity<List<X>> findbyenglishword(@PathVariable String englishword) {
-		Optional<List<X>> xList = xd.findByEnglishword(englishword);
+		Optional<List<X>> xList = xd.findByEnglishwordIgnoreCase(englishword);
 		
 		if (!xList.get().isEmpty()) {
 			List<X> xl = xList.get();
@@ -81,7 +82,7 @@ public class XController {
 	//Get by Efik Word
 	@GetMapping(value = "/getEfik/{efikword}")
 	public ResponseEntity<List<X>> findbyefikword(@PathVariable String efikword) {
-		Optional<List<X>> xList = xd.findByEfikword(efikword);
+		Optional<List<X>> xList = xd.findByEfikwordIgnoreCase(efikword);
 		
 		if (!xList.get().isEmpty()) {
 			List<X> xl = xList.get();
