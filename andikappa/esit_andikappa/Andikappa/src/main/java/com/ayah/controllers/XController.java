@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ayah.daos.X;
 import com.ayah.daos.XDAO;
-import com.ayah.models.X;
 
 
 

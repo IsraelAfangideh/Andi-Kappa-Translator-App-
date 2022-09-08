@@ -5,16 +5,16 @@ document.getElementById("submitNewTranslation").onclick = addtranslation
 
 async function addtranslation () {
 
-var englishword = document.getElementById("englishword").value
-let efikword = document.getElementById("efikword").value
-let wordtype = document.getElementById("wordtype").value
-let context = document.getElementById("context").value
-
-// let englishword = englishwordmixedcase.toLowerCase()
-// let efikword = efikwordmixedcase.toLowerCase()
-// let wordtype = wordtypemixedcase.toLowerCase()
-// let context = contextmixedcase.toLowerCase()
-
+var englishwordd = document.getElementById("englishword").value
+let efikwordd = document.getElementById("efikword").value
+let wordtypee = document.getElementById("wordtype").value
+let contextt = document.getElementById("context").value
+console.log(englishwordd)
+let englishword =   englishwordd.toLowerCase
+let efikword = efikwordd.toLowerCase
+let wordtype = wordtypee.toLowerCase
+let context = contextt.toLowerCase
+fetch(englishword).then
 let translationjson = {
     "englishword": englishword,
     "efikword": efikword,
@@ -24,6 +24,7 @@ let translationjson = {
 }
 console.log(translationjson)
 let tss = JSON.stringify(translationjson)
+tss.toLowerCase
 console.log(translationjson)
     let response = await fetch(url + "/ikoh/add",{
         method: "POST",
