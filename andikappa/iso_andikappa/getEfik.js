@@ -1,4 +1,4 @@
-const url = "http://localhost:7778/kappa"
+const url = "http://localhost:7777/kappa"
 
 document.getElementById("submit").onclick = getefikword
 

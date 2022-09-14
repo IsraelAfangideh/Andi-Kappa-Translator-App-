@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+  
+  }
+
+  input:invalid {
+    border: red solid 3px;
+  }
+
+  h1{
+    color: azure;
+    
+  }

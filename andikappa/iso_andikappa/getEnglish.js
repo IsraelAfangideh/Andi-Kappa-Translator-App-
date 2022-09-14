@@ -1,4 +1,4 @@
-const url = "http://localhost:7778/kappa"
+const url = "http://localhost:7777/kappa"
 
 document.getElementById("submit").onclick = getEnglishword
 
@@ -6,6 +6,10 @@ async function getEnglishword(){
 
     document.getElementById("tablebody").innerHTML = ""
 let Englishword = document.getElementById("Englishword").value
+
+if (Englishword == ""){
+    alert("Type in an English Word First dummy");
+}
 console.log("hii")
     let response = await fetch (url + "/ikoh/getEnglish/" + Englishword,{
       
@@ -36,7 +40,7 @@ console.log("hii")
 
         }
     }else{
-        alert("Something went wrong, try again");
+       // alert("Something went wrong, try again");
     }
 
 }
