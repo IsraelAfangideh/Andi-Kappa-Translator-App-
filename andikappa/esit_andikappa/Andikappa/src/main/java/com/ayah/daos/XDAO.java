@@ -25,4 +25,6 @@ public interface XDAO extends JpaRepository <X, Integer>{
 ////	public Optional<List<X>>findbyenglishword(String englishword);
 
 	// public Optional<List<X>>findById();
+
+	
 }

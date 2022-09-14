@@ -27,16 +27,25 @@ public class Users {
    private String firstname;
 
    @Column 
-   private String familyname;
+   private String surname;
 
    @Column
    private String email;
+
+   
+   @Column 
+   private String username;
+   
+   @Column
+   private int pin;
 
    @Column
    private String community;
 
    @Column
-   private int mannapoints;
+   private int cred;
+
+  
 
    @OneToMany(mappedBy = "user")
    private List<X> x;
