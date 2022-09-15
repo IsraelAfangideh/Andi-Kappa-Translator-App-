@@ -1,5 +1,9 @@
 const url = "http://localhost:7777/kappa"
 
+window.onload = function() {
+    document.getElementById("language").value = "Add New Translation"
+  }
+
 document.getElementById("directiveh1").innerText = "Add New Translation"
 document.getElementById("submitNewTranslation").onclick = addtranslation
 
@@ -18,9 +22,9 @@ let efikinput = document.getElementById("efikword")
 let wordinput = document.getElementById("wordtype")
 let contextinput = document.getElementById("context")
 
-function ght (){
-    alert(document.getElementById("englishword").value)
-}
+// function ght (){
+//     alert(document.getElementById("englishword").value)
+// }
  function grammercheck(){
     console.log("grammerchack initiated")
 const propernoun = document.getElementById("wordtype").value

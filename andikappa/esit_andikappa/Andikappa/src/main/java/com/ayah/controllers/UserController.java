@@ -1,5 +1,8 @@
 package com.ayah.controllers;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,6 +26,7 @@ public class UserController {
 		this.ud = ud;
 	}
 
+    //Register Method
     @PostMapping(value = "/register")
     public ResponseEntity addUser(@RequestBody Users u){
 
@@ -37,7 +41,21 @@ public class UserController {
         return ResponseEntity.accepted().body("Welcome:" + u);
     }
 
+// Login Method
+    @PostMapping(value = "/login")
+    public ResponseEntity login(@RequestBody Users u){
 
+  Optional<List<Users>> possibleUser = ud.findByUsernameAndPin(u.getUsername(), u.getPin());
+
+  List<Users> gooduser;
+        if(possibleUser.isPresent()){
+        gooduser = possibleUser.get();
+        return ResponseEntity.accepted().body("welcome: " + u.getUsername() + u.getSurname() + "you have: " +  u.getCred() + " cred");
+        }
+            return ResponseEntity.status(403).build();
+
+    }
+    
     
 
 }

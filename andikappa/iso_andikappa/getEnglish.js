@@ -1,7 +1,35 @@
 const url = "http://localhost:7777/kappa"
 
-document.getElementById("submit").onclick = getEnglishword
+window.onload = function() {
+    document.getElementById("language").value = "Search English Word"
+  }
 
+document.getElementById("submit").onclick = getEnglishword
+document.getElementById("language").onclick = languagecheck
+
+
+
+function languagecheck (){
+    console.log(document.getElementById("language").value)
+
+if (document.getElementById("language").value == "Search Efik Word") {
+
+   
+    window.location.href = "getEfik.html"
+
+    
+
+}else if (document.getElementById("language").value == "Add New Translation") {
+
+   
+    window.location.href = "addTranslation.html"
+
+    
+
+}
+
+
+}
 async function getEnglishword(){
 
     document.getElementById("tablebody").innerHTML = ""

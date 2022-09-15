@@ -1,6 +1,31 @@
 const url = "http://localhost:7777/kappa"
 
+document.getElementById("language").onclick = languagecheck
+
 document.getElementById("submit").onclick = getefikword
+
+function languagecheck (){
+    console.log(document.getElementById("language").value)
+
+if (document.getElementById("language").value == "Search English Word") {
+
+    console.log("englishdetected")
+    window.location.href = "getEnglish.html"
+
+
+    
+}else if (document.getElementById("language").value == "Add New Translation") {
+
+   
+    window.location.href = "addTranslation.html"
+
+    
+
+}
+ 
+}
+
+
 
 async function getefikword(){
     

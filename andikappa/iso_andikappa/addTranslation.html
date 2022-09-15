@@ -15,9 +15,20 @@
     border: red solid 3px;
   }
 </style>
+
 </head>
 <body>
-
+    <div>
+        <label for="" style="color: white; font-size: larger; font-weight: 450;"> Task:</label>
+  
+        <select name="language" id="language">
+      
+          <option value="Search Efik Word">Search Efik Word:</option>
+         <option value="Search English Word">Search English Word:</option>
+         <option value="Add New Translation">Add New Translation</option>
+        </select>
+      
+      </div>
     <h1 id="directiveh1">Add New Translation</h1>
     <h3>only use lowercase letters</h3>
 <form>
@@ -26,8 +37,8 @@
     <label for="efikword">Efik Word:</label><br>
     <input id="efikword" class="input" type="text"><br><br>
     <label for=""> Word Type:</label><br>
-    <input id="wordtype"  list="word-type"><br>
-    <datalist id="word-type">
+    <input id="wordtype"  list="wordtype-"><br>
+    <datalist id="wordtype-">
         <option value="noun"></option>
         <option value="pronoun"></option>
         <option value="Proper Noun"></option>

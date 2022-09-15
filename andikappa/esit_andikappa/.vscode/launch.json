@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AndikappaApplication<Andikappa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ayah.AndikappaApplication",
+            "projectName": "Andikappa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
