@@ -72,7 +72,7 @@ appengineStage.dependsOn test
 
 appengine {  // App Engine tasks configuration
   deploy {   // deploy configuration
-    projectId = 'my-project-id'
+    projectId = 'revaturejavagcp'
     version = '1'
   }
 }
