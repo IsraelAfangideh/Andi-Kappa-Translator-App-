@@ -1,16 +1,41 @@
 const url = "http://localhost:7777/kappa"
 
+  document.getElementById("directiveh1").innerText = "Add New Translation"
+  document.getElementById("submitNewTranslation").onclick = addtranslation
+  document.getElementById("language").onclick = languagecheck
+  
+  document.getElementById("englishword").onchange = grammercheck
+  document.getElementById("efikword").onchange = grammercheck
+  document.getElementById("wordtype").onchange = grammercheck
+   document.getElementById("context").onchange = grammercheck
+
+   
 window.onload = function() {
     document.getElementById("language").value = "Add New Translation"
   }
 
-document.getElementById("directiveh1").innerText = "Add New Translation"
-document.getElementById("submitNewTranslation").onclick = addtranslation
+  function languagecheck (){
+    console.log(document.getElementById("language").value)
 
-document.getElementById("englishword").onchange = grammercheck
-document.getElementById("efikword").onchange = grammercheck
-document.getElementById("wordtype").onchange = grammercheck
- document.getElementById("context").onchange = grammercheck
+if (document.getElementById("language").value == "Search English Word") {
+
+    console.log("englishdetected")
+    window.location.href = "getEnglish.html"
+
+
+    
+}else if (document.getElementById("language").value == "Search Efik Word") {
+
+   
+    window.location.href = "getEfik.html"
+
+    
+
+}
+ 
+}
+
+
 
 //  let englishword = document.getElementById("englishword").value
 // let efikword = document.getElementById("efikword").value
@@ -31,12 +56,12 @@ const propernoun = document.getElementById("wordtype").value
 
 if (propernoun != "Proper Noun"){
     englishinput.setAttribute("pattern", "[a-z]{0,20}")
-    efikinput.setAttribute("pattern", "[a-z]{0,20}")
+    efikinput.setAttribute("pattern", "[a-z(\W+)]{0,20}")
     contextinput.setAttribute("pattern", "[a-z ]{0,100}")
 }else{
 
     englishinput.setAttribute("pattern", "[A-Za-z]{0,20}")
-    efikinput.setAttribute("pattern", "[A-Za-z]{0,20}")
+    efikinput.setAttribute("pattern", "[A-Za-z\p{L}]{0,20}")
     contextinput.setAttribute("pattern", "[A-Za-z ]{0,100}")
 }
  }
