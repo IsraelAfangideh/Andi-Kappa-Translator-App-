@@ -72,3 +72,5 @@ console.log("hii")
     }
 
 }
+
+//Need to add/Append the contains methods here, starting with ayeneefik, then ayene context. We will add them to row.appendChild cell, cell2, cell3. 
