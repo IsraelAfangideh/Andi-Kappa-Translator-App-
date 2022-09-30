@@ -51,20 +51,7 @@ public class XController {
 		
 	}
 	
-	//Get by Efik Word
-	// @GetMapping(value = "/Efik")
-	// public ResponseEntity<List<X>> findByEfikwordOrEnglishword(@PathVariable String efikword,  @PathVariable String englishword) {
-	// 	Optional<List<X>> xList = xd.findByEfikwordOrEnglishword(efikword, englishword);
-		
-	// 	if (!xList.get().isEmpty()) {
-	// 		List<X> xl = xList.get();
-			
-	// 		return ResponseEntity.ok(xl);
-	// 	}
-		
-	// 	return ResponseEntity.noContent().build();
-	// }
-//	
+
 	//Get by English Word
 	@GetMapping(value = "/getEnglish/{englishword}")
 	public ResponseEntity<List<X>> findbyenglishword(@PathVariable String englishword) {
@@ -92,19 +79,40 @@ public class XController {
 		
 		return ResponseEntity.noContent().build();
 	}
-	//Get by ID
-	// @GetMapping(value = "/getbyID/{xid}")
-	// public ResponseEntity<List<X>> findByTranslationId(@PathVariable Integer xid) {
-	// 	Optional<X> xList = xd.findById(xid);
-		
-	// 	if (!xList.isPresent()) {
-	// 		List<X> xl = xList.get();
-			
-	// 		return ResponseEntity.ok(xl);
-	// 	}
-		
-	// 	return ResponseEntity.noContent().build();
-	// }
-	
+
+
+	//ROUTES FOR CONTAINS QUERIES
+	@GetMapping(value = "/ayeneEfik/{efikword}")
+	public ResponseEntity<List<X>> findByAyeneIkohEfikKeEsit(@PathVariable String efikword){
+		Optional<List<X>> xList = xd.findByAyeneIkohEfikKeEsit(efikword);
+		if (!xList.get().isEmpty()) {
+			List<X> xl = xList.get();
+			return ResponseEntity.ok(xl);
+		}
+
+		return ResponseEntity.noContent().build();
+	}
+
+	@GetMapping(value = "/ayeneEnglish/{englishword}")
+	public ResponseEntity<List<X>> findByAyeneIkohMbakaraKeEsit(@PathVariable String englishword){
+		Optional<List<X>> xList = xd.findByAyeneIkohMbakaraKeEsit(englishword);
+		if (!xList.get().isEmpty()) {
+			List<X> xl = xList.get();
+			return ResponseEntity.ok(xl);
+		}
+
+		return ResponseEntity.noContent().build();
+	}
+
+	@GetMapping(value = "/ayeneContext/{context}")
+	public ResponseEntity<List<X>>  findByAyeneContextKeEsit(@PathVariable String context){
+		Optional<List<X>> xList = xd.findByAyeneContextKeEsit(context);
+		if (!xList.get().isEmpty()) {
+			List<X> xl = xList.get();
+			return ResponseEntity.ok(xl);
+		}
+
+		return ResponseEntity.noContent().build();
+	}
 		
 }

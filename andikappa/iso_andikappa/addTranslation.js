@@ -1,18 +1,43 @@
-const url = "http://localhost:7777/kappa"
+// CONSTANTS
 
-  document.getElementById("directiveh1").innerText = "Add New Translation"
+const url = "http://localhost:7777/kappa"
+const propernoun = document.getElementById("wordtype-").innerText
+
+// FUNCTION CALLS
   document.getElementById("submitNewTranslation").onclick = addtranslation
   document.getElementById("language").onclick = languagecheck
-  
-  document.getElementById("englishword").onchange = grammercheck
-  document.getElementById("efikword").onchange = grammercheck
-  document.getElementById("wordtype").onchange = grammercheck
-   document.getElementById("context").onchange = grammercheck
+  document.getElementById("ö").onclick = addö
 
-   
-window.onload = function() {
+
+document.getElementById("englishword").onchange = convertcase
+  document.getElementById("efikword").onchange = convertcase
+  document.getElementById("wordtype").onchange = convertcase
+   document.getElementById("context").onchange = convertcase
+
+
+
+  // IN LINE FUNCTIONS
+  window.onload = function() {
     document.getElementById("language").value = "Add New Translation"
   }
+
+   document.getElementById("ñ").addEventListener ('click', function() { 
+    document.getElementById("efikword").value = document.getElementById("efikword").value += "ñ"})
+
+  
+
+      //DIVORCED FUNCTIONS
+   function addñ(){
+
+    document.getElementById("efikword").value = document.getElementById("efikword").value += "ñ"
+
+   }
+
+   function addö(){
+ document.getElementById("efikword").value = document.getElementById("efikword").value += "ö"
+}
+   
+
 
   function languagecheck (){
     console.log(document.getElementById("language").value)
@@ -32,39 +57,21 @@ if (document.getElementById("language").value == "Search English Word") {
     
 
 }
- 
 }
 
 
 
-//  let englishword = document.getElementById("englishword").value
-// let efikword = document.getElementById("efikword").value
-// let wordtype = document.getElementById("wordtype").value
-// let context = document.getElementById("context").value
-
-let englishinput = document.getElementById("englishword")
-let efikinput = document.getElementById("efikword")
-let wordinput = document.getElementById("wordtype")
-let contextinput = document.getElementById("context")
-
-// function ght (){
-//     alert(document.getElementById("englishword").value)
-// }
- function grammercheck(){
-    console.log("grammerchack initiated")
-const propernoun = document.getElementById("wordtype").value
-
-if (propernoun != "Proper Noun"){
-    englishinput.setAttribute("pattern", "[a-z]{0,20}")
-    efikinput.setAttribute("pattern", "[a-z(\W+)]{0,20}")
-    contextinput.setAttribute("pattern", "[a-z ]{0,100}")
-}else{
-
-    englishinput.setAttribute("pattern", "[A-Za-z]{0,20}")
-    efikinput.setAttribute("pattern", "[A-Za-z\p{L}]{0,20}")
-    contextinput.setAttribute("pattern", "[A-Za-z ]{0,100}")
-}
- }
+function convertcase(){
+    console.log(propernoun)
+    document.getElementById("englishword").textContent.toLowerCase
+    if (propernoun == "Proper Noun"){
+        console.log("is proper noun")
+       document.getElementById("englishword").textContent.toLowerCase
+    }else if (propernoun != "Proper Noun"){
+        console.log("is NOT proper noun")
+        document.getElementById("englishword").textContent.toUpperCase   
+    }
+    }
 async function addtranslation () {
 
 
@@ -92,11 +99,15 @@ console.log(response.body)
 
 
 if (response.status == 202){
-    document.getElementById("directiveh1").innerHTML = ("You have added the following translation:" + tss)
+   
+   document.getElementById("directiveh1").innerHTML = ("You have added the following translation:" + tss)
+
+   
 }
 else{
 document.getElementById("directiveh1").innerText = "unsuccessful, try again"
 }
 }
+
  
  
