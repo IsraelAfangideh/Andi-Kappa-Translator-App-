@@ -7,8 +7,8 @@ window.onload = function() {
 
 document.getElementById("language").onclick = languagecheck
 document.getElementById("submit").onclick = getEnglishword
-document.getElementById("submit").onclick = getayeneenglish
-document.getElementById("submit").onclick = getayenecontext
+
+// document.getElementById("submit").onclick = getayenecontext
 
 
 function languagecheck (){
@@ -73,6 +73,7 @@ console.log("hii")
        // alert("Something went wrong, try again");
     }
 
+    getayeneenglish();
 }
 
 async function getayeneenglish(){
@@ -93,7 +94,7 @@ console.log("containsenglishfunctionaccessed")
         for (let englishword of data){
             let row = document.createElement("tr");
       let cell = document.createElement("td");
-      cell.innerHTML = englishword.englishword
+      cell.innerHTML = englishword.efikword
 
       let cell2 = document.createElement("td")
       cell2.innerHTML =englishword.wordtype
@@ -111,7 +112,7 @@ console.log("containsenglishfunctionaccessed")
     }else{
         alert("Something went wrong, try again");
     }
-
+getayenecontext();
 }
 
 async function getayenecontext(){
@@ -148,7 +149,7 @@ console.log("contextfunctionaccessed")
 
         }
     }else{
-        alert("Something went wrong, try again");
+        
     }
 
 }
