@@ -45,7 +45,7 @@ document.getElementById("englishword").onchange = convertcase
 if (document.getElementById("language").value == "Search English Word") {
 
     console.log("englishdetected")
-    window.location.href = "getEnglish.html"
+    window.location.href = "index.html"
 
 
     
