@@ -7,6 +7,7 @@ User Stories:
 Acceptance Criteria: 
 Given: I am a user
 And: I visit the Web Page
+I:  should see a page with an intuitive form with only 3 input fields and nice placeholders that tell me what to do ;)
 It: should not reload until I fill and submit the form
 It: should not change the collection until I submit the form
 When: I press the post button
