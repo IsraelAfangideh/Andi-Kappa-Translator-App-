@@ -1,11 +1,11 @@
 // Initialize Firestore through Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js'
-    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js'
-    import { collection, addDoc, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js"; 
+import { getAuth } from 'https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js'
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js'
+import { collection, addDoc, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js"; 
 const firebaseApp = initializeApp({
   apiKey: "AIzaSyAcFqlPGM7U65HFet91ObLIN8l3sCQPy4c",
   authDomain: "andikappa-2b175.firebaseapp.com",
