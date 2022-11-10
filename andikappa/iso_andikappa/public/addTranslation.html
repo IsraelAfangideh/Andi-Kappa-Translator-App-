@@ -65,28 +65,17 @@
     <label for="efikword" > Efik Word:</label><br>
     <!-- alt + 0241 = ñ alt + 0246 = ö -->
 <div style="white-space: nowrap;"><input id="efikword" class="input" type="text"> <button id="ñ" class="btn btn-toolbar" type="button"> ñ</button> <button id="ö" class="btn" type="button">ö </button>  </div><br><br>
-    <label for="englishword">English Word:</label><br>
-    <input id="englishword" class="input" type="text"><br><br>
-    <label for=""> Word Type:</label><br>
-    <input id="wordtype"  list="wordtype-"><br>
-    <datalist id="wordtype-">
-        <option value="noun"></option>
-        <option value="pronoun"></option>
-        <option value="Proper Noun"></option>
-        <option value="verb"></option>
-        <option value="adverb"></option>
-        <option value="adjective"></option>
-        <option value="greeting"></option>
-    </datalist><br>
   
+<label for="definition">Definition:</label><br>
+<input id="definition" class="input" type="text"><br><br>
+
     <label for="context">Context:</label><br>
-    <input id="context" class="input" type="text"><br><br>
+    <input id="context" class="input" type="text" placeholder="Type an example of how its used in a sentence"><br><br>
     
-    <label for="definition">Definition:</label><br>
-    <input id="definition" class="input" type="text"><br><br>
+ 
 
     <button id="submitNewTranslation" type="submit" value="Add">Post</button>
 </form>
-    <script src="app.js" type="module"></script>
+    <script src="app.ts" type="module"></script>
 </body>
 </html>
