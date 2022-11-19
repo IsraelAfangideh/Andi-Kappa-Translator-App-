@@ -18,20 +18,73 @@ const firebaseApp = initializeApp({
 
 const db = getFirestore();
 
-await setDoc(doc(db, "translations", "1"), {
-  "Context": document.getElementById("context").value,
-  "Definition": document.getElementById("definition").value,
-  "Efik-Word": document.getElementById("efikword").value,
-  "English-Word": document.getElementById("englishword").value,
-  "Word-Type": document.getElementById("wordtype").value
+
+document.getElementById("language").onclick = languagecheck
+document.getElementById("ö").onclick = addö
+document.getElementById("ñ").onclick = addñ
+
+document.getElementById("submitNewTranslation").onclick = addtranslation
+
+
+
+// IN LINE FUNCTIONS
+window.onload = function() {
+  document.getElementById("language").value = "Add New Translation"
+}
+
+
+
+
+    //DIVORCED FUNCTIONS
+ function addñ(){
+
+  document.getElementById("efikword").value = document.getElementById("efikword").value += "ñ"
+
+ }
+
+ function addö(){
+document.getElementById("efikword").value = document.getElementById("efikword").value += "ö"
+}
+ 
+
+
+function languagecheck (){
+  console.log(document.getElementById("language").value)
+
+if (document.getElementById("language").value == "Search English Word") {
+
+  console.log("englishdetected")
+  window.location.href = "getEnglish.html"
+
+
+  
+}else if (document.getElementById("language").value == "Search Efik Word") {
+
+ 
+  window.location.href = "getEfik.html"
+
+  
+
+}
+}
+
+async function addtranslation (){
+
+  let context = document.getElementById("context").value
+  let definition =  document.getElementById("definition").value
+  let efikword = document.getElementById("efikword").value
+
+  
+console.log(efikword)
+await addDoc(doc(db, "translations"), {
+  "Context": context,
+  "Definition": definition,
+  "EfikWord": efikword
   // "CreatedAt": serverTimestamp()
 });
 
-// db.collection("translations").doc("2").set({
 
-// })
 
 console.log("addTranslation function run")
 
-
-// }
+}
