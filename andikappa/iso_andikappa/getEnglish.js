@@ -1,4 +1,4 @@
-const url = "http://localhost:7777/kappa"
+const url = "http://localhost:7777/ikoh"
 
 window.onload = function() {
     document.getElementById("language").value = "Search English Word"
@@ -41,7 +41,7 @@ if (Englishword == ""){
     alert("Type in an English Word First dummy");
 }
 console.log("hii")
-    let response = await fetch (url + "/ikoh/getEnglish/" + Englishword,{
+    let response = await fetch (url + "/getEnglish/" + Englishword,{
       
     })
     console.log(response.json)
@@ -81,7 +81,7 @@ async function getayeneenglish(){
     document.getElementById("tablebody").innerHTML = ""
 let englishword = document.getElementById("Englishword").value
 console.log("containsenglishfunctionaccessed")
-    let response = await fetch (url + "/ikoh/ayeneEnglish/" + englishword,{
+    let response = await fetch (url + "/ayeneEnglish/" + englishword,{
       
     })
     console.log(response.json)
@@ -120,7 +120,7 @@ async function getayenecontext(){
     document.getElementById("tablebody").innerHTML = ""
 let englishword = document.getElementById("Englishword").value
 console.log("contextfunctionaccessed")
-    let response = await fetch (url + "/ikoh/ayeneContext/" + englishword,{
+    let response = await fetch (url + "/ayeneContext/" + englishword,{
       
     })
     console.log(response.json)

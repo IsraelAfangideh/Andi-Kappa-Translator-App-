@@ -1,0 +1,56 @@
+# Anything that goes here is made globally for all profiles.
+spring:
+  application:
+    name: andikappa
+
+---
+# Anything that goes here is made specifically for dev's profile.
+spring:
+  profiles: dev
+
+---
+# Anything that goes here is made specifically for clouds's profile.
+# Cloud is the default profile that Google Clound Foundry makes your application use if you do not override it.
+spring:
+  profiles: cloud
+fems:
+  url: # cloud ip goes here
+
+---
+# Default profile for local testing.
+spring:
+  profiles: default
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        ddl-auto: update
+  datasource:
+    url: jdbc:h2:file:C:\CurrentProjects\Andikappa\Andi-Kappa-Translator-App-\andikappa\esit_andikappa\Andikappa\src\main\resources;DB_CLOSE_ON_EXIT=FALSE;MODE=HSQLDB;
+    initialization-mode: always
+  h2:
+    console:
+      enabled: true
+server:
+  port: 7777
+
+---
+spring:
+  profiles: local
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        ddl-auto: update
+  datasource:
+    url: jdbc:h2:file:C:\CurrentProjects\Andikappa\Andi-Kappa-Translator-App-\andikappa\esit_andikappa\Andikappa\src\main\resources;DB_CLOSE_ON_EXIT=FALSE;MODE=HSQLDB;
+    initialization-mode: always
+  h2:
+    console:
+      enabled: true
+server:
+  port: 7777
