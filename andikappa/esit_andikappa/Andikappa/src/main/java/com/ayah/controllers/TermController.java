@@ -18,7 +18,7 @@ import com.ayah.daos.TermDAO;
 
 
 @RestController
-@RequestMapping(value = "/ikoh", produces = "application/json")
+@RequestMapping(value = "", produces = "application/json")
 @CrossOrigin
 public class TermController {
 
