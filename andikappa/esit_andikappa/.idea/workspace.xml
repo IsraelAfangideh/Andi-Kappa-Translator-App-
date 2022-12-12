@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c92e57b-c49a-4b01-9880-b2d3d80ee6f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../andi-angular/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../andi-angular/node_modules/encoding/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../andi-angular/node_modules/needle/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../andi-angular/node_modules/source-map-loader/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/esit_andikappa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/TermDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/Term.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/resources.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/resources.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/AndikappaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/AndikappaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/XController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/TermController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/XDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/X.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/getEnglish.js" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/getEnglish.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/Andikappa">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/Andikappa">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IcD5TqTDcjbULwhk13XoDeCgT7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/CurrentProjects/Andikappa/Andi-Kappa-Translator-App-/andikappa/esit_andikappa"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.AndikappaApplication">
+    <configuration name="AndikappaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ayah.AndikappaApplication" />
+      <module name="Andikappa.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ayah.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Andikappa" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Andikappa" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AndikappaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c92e57b-c49a-4b01-9880-b2d3d80ee6f7" name="Changes" comment="" />
+      <created>1670471794261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670471794261</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
