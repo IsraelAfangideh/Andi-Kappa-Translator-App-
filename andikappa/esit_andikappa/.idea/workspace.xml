@@ -6,19 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="aa782127-16b3-487d-ab91-1d049b37aa9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/build/resources/main/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/resources.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/resources.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/webapp/WEB-INF/appengine-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/TermController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/TermController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
