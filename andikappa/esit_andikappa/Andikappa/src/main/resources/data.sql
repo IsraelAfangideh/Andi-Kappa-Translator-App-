@@ -1,1 +1,0 @@
---insert into x(xid, englishword, efikword, context)values(0, "hi", "abadie", "hello");

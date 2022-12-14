@@ -53,6 +53,8 @@ public class TermController {
 		Optional<List<Term>> ListOfTerms;
 		ListOfTerms = termdao.findByEfikwordIgnoreCase(term);
 
+//		if (termdao.findByEfikwordIgnoreCase(term).isPresent()){}
+
 //if efik word does not exist
 		if (ListOfTerms.get().isEmpty()) {
 			ListOfTerms = termdao.findByEnglishwordIgnoreCase(term);
@@ -70,6 +72,7 @@ public class TermController {
 			return ListOfTerms;
 		}
 		return ListOfTerms;
+
 	}
 
 	//Get by English Word
