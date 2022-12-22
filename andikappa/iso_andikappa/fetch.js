@@ -1,4 +1,5 @@
-const url = "http://localhost:7777/"
+const url = "http://18.222.31.44/"
+//"http://3.19.55.28/"
 
 // document.getElementById("language").onclick = languagecheck
 
@@ -27,14 +28,14 @@ let efikword = document.getElementById("efikword").value
       let cell = document.createElement("td");
       cell.innerHTML = englishword.englishword
 
-      let cell2 = document.createElement("td")
-      cell2.innerHTML =englishword.wordtype
+      let cell2 = document.createElement("td");
+      cell2.innerHTML = englishword.efikword
 
-      let cell3 = document.createElement("td")
-      cell3.innerHTML = englishword.context
+      let cell4 = document.createElement("td")
+      cell4.innerHTML = englishword.context
             row.appendChild(cell)
       row.appendChild(cell2)
-      row.appendChild(cell3)
+      row.appendChild(cell4)
 
       document.getElementById("tablebody").appendChild(row);
 

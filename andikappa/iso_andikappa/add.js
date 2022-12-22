@@ -1,6 +1,7 @@
 // CONSTANTS
 
-const url = "http://localhost:7777/"
+const url = "http://18.222.31.44/"
+//"http://3.19.55.28/"
 // const propernoun = document.getElementById("wordtype-").innerText
 
 // FUNCTION CALLS
@@ -9,17 +10,6 @@ const url = "http://localhost:7777/"
   document.getElementById("ö").onclick = addö
 
 
-// document.getElementById("englishword").onchange = convertcase
-//   document.getElementById("efikword").onchange = convertcase
-//   document.getElementById("wordtype").onchange = convertcase
-//    document.getElementById("context").onchange = convertcase
-
-
-
-  // IN LINE FUNCTIONS
-  // window.onload = function() {
-  //   document.getElementById("language").value = "Add New Translation"
-  // }
 
    document.getElementById("ñ").addEventListener ('click', function() { 
     document.getElementById("efikword").value = document.getElementById("efikword").value += "ñ"})
@@ -39,39 +29,6 @@ const url = "http://localhost:7777/"
    
 
 
-//   function languagecheck (){
-//     console.log(document.getElementById("language").value)
-
-// if (document.getElementById("language").value == "Search English Word") {
-
-//     console.log("englishdetected")
-//     window.location.href = "getEnglish.html"
-
-
-    
-// }else if (document.getElementById("language").value == "Search Efik Word") {
-
-   
-//     window.location.href = "getEfik.html"
-
-    
-
-// }
-// }
-
-
-
-// function convertcase(){
-//     console.log(propernoun)
-//     document.getElementById("englishword").textContent.toLowerCase
-//     if (propernoun == "Proper Noun"){
-//         console.log("is proper noun")
-//        document.getElementById("englishword").textContent.toLowerCase
-//     }else if (propernoun != "Proper Noun"){
-//         console.log("is NOT proper noun")
-//         document.getElementById("englishword").textContent.toUpperCase   
-//     }
-//     }
 async function addtranslation () {
 
 
@@ -81,7 +38,7 @@ let translationjson = {
     "context": document.getElementById("context").value
 
 }
-console.log(translationjson)
+
 let tss = JSON.stringify(translationjson)
 
 console.log(translationjson)

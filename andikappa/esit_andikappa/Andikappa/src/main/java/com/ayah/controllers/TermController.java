@@ -36,7 +36,6 @@ public class TermController {
 
 		//We use the save method to do inserts
 
-
 		Term newTerm = termdao.save(term);
 		System.out.println(newTerm);
 		if (newTerm == null) {

@@ -42,7 +42,7 @@ public class Users {
    private String community;
 
    @Column
-   private int cred;
+   private double cred;
 
   
 
@@ -52,7 +52,7 @@ public class Users {
     public Users() {
     }
 
-    public Users(int userid, String firstname, String surname, String email, String username, int pin, String community, int cred, String x) {
+    public Users(int userid, String firstname, String surname, String email, String username, int pin, String community, double cred, String x) {
         this.userid = userid;
         this.firstname = firstname;
         this.surname = surname;
@@ -120,11 +120,11 @@ public class Users {
         this.community = community;
     }
 
-    public int getCred() {
+    public double getCred() {
         return this.cred;
     }
 
-    public void setCred(int cred) {
+    public void setCred(double cred) {
         this.cred = cred;
     }
 
@@ -171,7 +171,7 @@ public class Users {
         return this;
     }
 
-    public Users cred(int cred) {
+    public Users cred(double cred) {
         setCred(cred);
         return this;
     }
