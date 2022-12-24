@@ -57,7 +57,7 @@ console.log(response.body)
 if (response.status == 202){
    
    document.getElementById("directiveh1").innerHTML = ("You have added the following translation:" + tss)
-
+// setTimeout(handler:document )
    
 }
 else{
