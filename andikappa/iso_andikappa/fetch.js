@@ -16,12 +16,12 @@ let efikword = document.getElementById("efikword").value
     let response = await fetch (url + "fetch/" + efikword,{
       
     })
-    console.log(response.json)
+    // console.log(response.json)
 
     if (response.status == 200){
         let data = await response.json();
 
-        console.log(data)
+        // console.log(data)
 
         for (let englishword of data){
             let row = document.createElement("tr");
