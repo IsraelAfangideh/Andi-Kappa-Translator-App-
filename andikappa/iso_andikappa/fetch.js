@@ -1,27 +1,24 @@
 const url = "http://18.222.31.44/"
 //"http://3.19.55.28/"
 
-// document.getElementById("language").onclick = languagecheck
 
 document.getElementById("submit").onclick = getefikword
-// document.getElementById("submit").onclick = getayeneefik
-// document.getElementById("submit").onclick = getayenecontext
 
+//Redirects
+document.getElementById("addbutton").onclick = function (){window.location.href = "add.html"} 
+document.getElementById("fetchbutton").onclick = function (){window.location.href = "fetch.html"} 
 
 async function getefikword(){
     
     document.getElementById("tablebody").innerHTML = ""
 let efikword = document.getElementById("efikword").value
-// console.log("hii")
     let response = await fetch (url + "fetch/" + efikword,{
       
     })
-    // console.log(response.json)
 
     if (response.status == 200){
         let data = await response.json();
 
-        // console.log(data)
 
         for (let englishword of data){
             let row = document.createElement("tr");

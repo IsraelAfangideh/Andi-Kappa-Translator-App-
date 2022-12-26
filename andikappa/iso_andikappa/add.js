@@ -4,13 +4,12 @@ const url = "http://18.222.31.44/"
 //"http://3.19.55.28/"
 // const propernoun = document.getElementById("wordtype-").innerText
 
+//Redirects
+document.getElementById("addbutton").onclick = function (){window.location.href = "add.html"} 
+document.getElementById("fetchbutton").onclick = function (){window.location.href = "fetch.html"} 
 // FUNCTION CALLS
   document.getElementById("submitNewTranslation").onclick = addtranslation
-  // document.getElementById("language").onclick = languagecheck
-  document.getElementById("ö").onclick = addö
-
-
-
+    document.getElementById("ö").onclick = addö
    document.getElementById("ñ").addEventListener ('click', function() { 
     document.getElementById("efikword").value = document.getElementById("efikword").value += "ñ"})
 
