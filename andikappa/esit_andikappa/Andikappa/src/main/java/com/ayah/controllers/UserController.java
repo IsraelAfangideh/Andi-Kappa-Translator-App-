@@ -3,6 +3,7 @@ package com.ayah.controllers;
 import java.util.List;
 import java.util.Optional;
 
+import com.ayah.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -12,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ayah.daos.UserDAO;
-import com.ayah.models.Users;
 
 @RestController
 @RequestMapping(value = "/agwo", produces = "application/json")
@@ -28,9 +28,9 @@ public class UserController {
 
     //Register Method
     @PostMapping(value = "/register")
-    public ResponseEntity addUser(@RequestBody Users u){
+    public ResponseEntity addUser(@RequestBody User u){
 
-        Users newUser = ud.save(u);
+        User newUser = ud.save(u);
         System.out.println(newUser);
         System.out.println(newUser);
         
@@ -43,14 +43,15 @@ public class UserController {
 
 // Login Method
     @PostMapping(value = "/login")
-    public ResponseEntity login(@RequestBody Users u){
+    public ResponseEntity login(@RequestBody User u){
 
-  Optional<List<Users>> possibleUser = ud.findByUsernameAndPin(u.getUsername(), u.getPin());
+  Optional<List<User>> possibleUser = ud.findByUsernameAndPassword(u.getUsername(), u.getPassword());
 
-  List<Users> gooduser;
+  List<User> gooduser;
         if(possibleUser.isPresent()){
         gooduser = possibleUser.get();
-        return ResponseEntity.accepted().body("welcome: " + u.getUsername() + u.getSurname() + "you have: " +  u.getCred() + " cred");
+        return ResponseEntity.accepted().body(u);
+                //("Welcome " + u.getFirstname() + u.getDOB()  + " you have: " +  u.getCred() + " cred");
         }
             return ResponseEntity.status(403).build();
 

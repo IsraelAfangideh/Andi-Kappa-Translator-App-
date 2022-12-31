@@ -1,26 +1,20 @@
 package com.ayah.models;
 import java.util.Objects;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.sun.istack.NotNull;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-
-	@Entity
+@Entity
 	@Component
-	@Table(name = "x")
+	@Table(name = "term")
 	public class Term {
 		
 		@Id
 		@GeneratedValue(strategy =GenerationType.IDENTITY)
-		private int xid;
+		private int termid;
 		
 		@Column
 		@NotNull
@@ -32,133 +26,106 @@ import javax.persistence.Id;
 
 		
 		@Column
-		private String context;
-
+		private String example;
 
 		@Column
-		private String poster;
+		private int weight;
+
+		@JoinColumn(name = "author")
+		@ManyToOne(fetch = FetchType.LAZY)
+		private User author;
 
 	public Term() {
 	}
 
-	public Term(int xid, String englishword, String efikword, String context, String definition, String poster) {
-		this.xid = xid;
-		this.englishword = englishword;
-		this.efikword = efikword;
-
-		this.context = context;
-		this.poster = poster;
-	}
-
-
-	public Term(String englishword, String efikword, String wordtype, String context, String nse_awongo, String definition, String poster) {
-		this.englishword = englishword;
-		this.efikword = efikword;
-		this.context = context;
-		this.poster = poster;
-	}
-
-
-	public int getXid() {
-		return this.xid;
-	}
-
-	public void setXid(int xid) {
-		this.xid = xid;
-	}
-
-	public String getEnglishword() {
-		return this.englishword;
-	}
-
-	public void setEnglishword(String englishword) {
-		this.englishword = englishword;
-	}
-
-	public String getEfikword() {
-		return this.efikword;
-	}
-
-	public void setEfikword(String efikword) {
-		this.efikword = efikword;
-	}
-
-
-	public String getContext() {
-		return this.context;
-	}
-
-	public void setContext(String context) {
-		this.context = context;
-	}
-
-
-	public String getPoster() {
-		return this.poster;
-	}
-
-	public void setPoster(String poster) {
-		this.poster = poster;
-	}
-
-	public Term xid(int xid) {
-		setXid(xid);
-		return this;
-	}
-
-	public Term englishword(String englishword) {
-		setEnglishword(englishword);
-		return this;
-	}
-
-	public Term efikword(String efikword) {
-		setEfikword(efikword);
-		return this;
-	}
-
-
-
-	public Term context(String context) {
-		setContext(context);
-		return this;
-	}
-
-
-
-	public Term user(String user) {
-		setPoster(user);
-		return this;
-	}
-
-	@Override
-	public boolean equals(Object o) {
-		if (o == this)
-			return true;
-		if (!(o instanceof Term)) {
-			return false;
+		@Override
+		public String toString() {
+			return "Term{" +
+					"termid=" + termid +
+					", englishword='" + englishword + '\'' +
+					", efikword='" + efikword + '\'' +
+					", example='" + example + '\'' +
+					", weight=" + weight +
+					", author=" + author +
+					'}';
 		}
-		Term term = (Term) o;
-		return xid == term.xid && Objects.equals(englishword, term.englishword) && Objects.equals(efikword, term.efikword) && Objects.equals(context, term.context) && Objects.equals(poster, term.poster);
-	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(xid, englishword, efikword, context, poster);
-	}
+		@Override
+		public boolean equals(Object o) {
+			if (this == o) return true;
+			if (!(o instanceof Term)) return false;
+			Term term = (Term) o;
+			return getTermid() == term.getTermid() && getWeight() == term.getWeight() && Objects.equals(getEnglishword(), term.getEnglishword()) && Objects.equals(getEfikword(), term.getEfikword()) && Objects.equals(getExample(), term.getExample()) && Objects.equals(getAuthor(), term.getAuthor());
+		}
 
-	@Override
-	public String toString() {
-		return "{" +
-			" xid='" + getXid() + "'" +
-			", englishword='" + getEnglishword() + "'" +
-			", efikword='" + getEfikword() + "'" +
-			", context='" + getContext() + "'" +
-			", user='" + getPoster() + "'" +
-			"}";
-	}
+		@Override
+		public int hashCode() {
+			return Objects.hash(getTermid(), getEnglishword(), getEfikword(), getExample(), getWeight(), getAuthor());
+		}
 
-		
+		public int getTermid() {
+			return termid;
+		}
 
-		
+		public void setTermid(int termid) {
+			this.termid = termid;
+		}
+
+		public String getEnglishword() {
+			return englishword;
+		}
+
+		public void setEnglishword(String englishword) {
+			this.englishword = englishword;
+		}
+
+		public String getEfikword() {
+			return efikword;
+		}
+
+		public void setEfikword(String efikword) {
+			this.efikword = efikword;
+		}
+
+		public String getExample() {
+			return example;
+		}
+
+		public void setExample(String example) {
+			this.example = example;
+		}
+
+		public int getWeight() {
+			return weight;
+		}
+
+		public void setWeight(int weight) {
+			this.weight = weight;
+		}
+
+		public User getAuthor() {
+			return author;
+		}
+
+		public void setAuthor(User author) {
+			this.author = author;
+		}
+
+		public Term(String englishword, String efikword, String example, int weight, User author) {
+			this.englishword = englishword;
+			this.efikword = efikword;
+			this.example = example;
+			this.weight = weight;
+			this.author = author;
+		}
+
+		public Term(int termid, String englishword, String efikword, String example, int weight, User author) {
+			this.termid = termid;
+			this.englishword = englishword;
+			this.efikword = efikword;
+			this.example = example;
+			this.weight = weight;
+			this.author = author;
+		}
 	}
 
