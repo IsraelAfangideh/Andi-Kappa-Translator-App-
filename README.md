@@ -12,4 +12,5 @@ User Stories
 8. users are ranked by cred (and manna if they choose to make that public) and can see their own ranking vs other users
 9. User can register other people and send them a link to complete registration. If they do, user gains cred and manna. 
 10. User can send manna to other users. 
+11. Users can upvote or downvote a term. 
 
