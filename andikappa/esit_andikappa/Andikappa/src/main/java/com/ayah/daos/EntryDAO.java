@@ -30,6 +30,9 @@ public interface EntryDAO extends JpaRepository <Entry, Integer>{
 
 	public Optional <List<Entry>> findByEfikwordIgnoreCase(String efikword);
 
+
+	Optional<List<Entry>> findByAuthorid(Integer integer);
+
 	//ILIKE here is like contains and is also case insensitive
 	@Query(value = "SELECT * FROM entry WHERE context ILIKE %?1%", nativeQuery = true)
 	public Optional <List<Entry>> findByAyeneContextKeEsit(String context);

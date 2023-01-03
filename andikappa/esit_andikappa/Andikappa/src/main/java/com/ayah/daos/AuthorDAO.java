@@ -27,5 +27,7 @@ public interface AuthorDAO extends JpaRepository <Author, Integer> {
    @Override
    List<Author> findAll();
 
+   List<Author>findAllByOrderByCredDesc();
+
 
 }

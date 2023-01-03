@@ -62,13 +62,20 @@ public class AuthorController {
     }
 
     @GetMapping(value = "/fetch")
-    public List<Author> getauthor(){
-        return authorDAO.findAll();
+    public List<Author> findallbycred(){
+
+        return authorDAO.findAllByOrderByCredDesc();
     }
 
     @GetMapping(value = "/fetch/{id}")
     public Optional<Author> getauthorbyid(@PathVariable Integer id){
         return authorDAO.findById(id);
+    }
+
+    @GetMapping(value = "/fetch/byid")
+    List<Author>getauthor(){
+
+        return authorDAO.findAll();
     }
     
     

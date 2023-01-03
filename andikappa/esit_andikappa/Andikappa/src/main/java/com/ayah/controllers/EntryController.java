@@ -106,6 +106,11 @@ public class EntryController {
 //
 //	}
 
+		@GetMapping(value = "/fetch/byauthor/{authorid}")
+		Optional<List<Entry>>findByAuthorId(@PathVariable Integer authorid){
+
+		return entryDAO.findByAuthorid(authorid);
+		}
 
 
 
