@@ -32,7 +32,7 @@ spring:
         ddl-auto: create-drop
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://database-1.clbamlahjh2r.us-east-2.rds.amazonaws.com:5432/postgres
+    url: jdbc:postgresql://database-2.clbamlahjh2r.us-east-2.rds.amazonaws.com:5432/postgres
     username: postgres
     password: password
     initialization-mode: always
