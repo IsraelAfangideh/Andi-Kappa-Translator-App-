@@ -10,10 +10,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa782127-16b3-487d-ab91-1d049b37aa9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/MessageDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/services/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/controllers/TermController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/controllers/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/daos/TermDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/daos/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/enums/Sex.class" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/enums/Sex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/models/Term.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/TermController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/EntryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/TermDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/EntryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/AuthorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/enums/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/enums/Sex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/models/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iso_andikappa/fetch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/fetch.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,16 +104,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -96,18 +117,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Current-Projects&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Current-Projects",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.AndikappaApplication">
     <configuration name="AndikappaApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ayah.AndikappaApplication" />
