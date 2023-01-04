@@ -11,26 +11,25 @@
 <link rel="stylesheet" href="global.css">
 
 <style>
-   	input:invalid {
-    border: red solid 3px;
-  }
+ 
 </style>
 
 </head>
 <body>
 
     <h1 id="directiveh1">Add:</h1>
-<form>
+<form class="form-group">
     <!-- <label for="efikword" > Efik/Ibibio/Annang Word:</label><br> -->
     <!-- alt + 0241 = ñ alt + 0246 = ö -->
-<div style="white-space: nowrap;"><input id="efikword" class="input" type="text" placeholder="Efik/Ibibio/Annang Word"> <button id="ñ" class="btn btn-toolbar" type="button"> ñ</button> <button id="ö" class="btn" type="button">ö </button>  </div><br><br>
+<div style="white-space: nowrap;"><input id="efikword" class="form-control" type="text" placeholder="Efik-Ibibio-Annang Words"> <button id="ñ" class="btn btn-toolbar" type="button"> ñ</button> <button id="ö" class="btn" type="button">ö </button>  </div><br><br>
     <!-- <label for="englishword">English Word:</label><br> -->
-    <input id="englishword" class="input" type="text" placeholder="English Word"><br><br>
+    <input id="englishword" class="form-control" type="text" placeholder="English Word"><br><br>
     
     <!-- <label for="context">Context:</label><br> -->
-    <input id="context" class="input" type="text" placeholder="Example"><br><br><button id="ñ" class="btn btn-toolbar" type="button"> ñ</button> <button id="ö" class="btn" type="button">ö </button>  </div><br><br>
-    
-    <input id="submitNewTranslation" type="button" value="Add">
+    <textarea name="Example" class="form-control" id="" placeholder="Example" cols="30" rows="3"></textarea>
+    <!-- <input id="context" class="form-control" type="text" placeholder="Example"><br><br><button id="ñ" class="btn btn-toolbar" type="button"> ñ</button> <button id="ö" class="btn" type="button">ö </button>  </div><br><br> -->
+    <br>
+    <button id="submitNewTranslation" type="button" class="btn btn-outline-primary">Add</button>
 </form>
 <br><br>
 <center>
