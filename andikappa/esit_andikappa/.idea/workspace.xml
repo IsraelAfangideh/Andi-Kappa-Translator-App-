@@ -13,22 +13,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/7.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/controllers/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/controllers/AuthorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/controllers/EntryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/controllers/EntryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/daos/AuthorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/daos/AuthorDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/daos/EntryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/classes/java/main/com/ayah/daos/EntryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/EntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/controllers/EntryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/AuthorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/AuthorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/EntryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/src/main/java/com/ayah/daos/EntryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iso_andikappa/fetch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/fetch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andikappa/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/Andikappa/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/fetch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/fetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/register.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

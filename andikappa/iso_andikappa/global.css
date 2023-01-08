@@ -1,7 +1,6 @@
-/* The theme is blue(primary) and gold(secondary)  */
-
 body {
-    background-color: lightblue;
+  /* background-color: #f2f2f2; */
+  background-color: lightblue;
   
   }
 
@@ -9,7 +8,6 @@ body {
     border: red solid 3px;
   }
 
-  h1{
-    color: azure;
-    
-  }
+
+
+/* The theme is blue(primary) and gold(secondary)  */

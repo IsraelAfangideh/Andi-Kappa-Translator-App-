@@ -19,7 +19,7 @@ let efikword = document.getElementById("efikword").value
     if (response.status == 200){
         let data = await response.json();
 
-
+console.log(data)
         for (let englishword of data){
             let row = document.createElement("tr");
       let cell = document.createElement("td");

@@ -6,7 +6,7 @@ const url = "http://18.222.31.44/"
 
 //Redirects
 document.getElementById("addbutton").onclick = function (){window.location.href = "add.html"} 
-document.getElementById("fetchbutton").onclick = function (){window.location.href = "fetch.html"} 
+document.getElementById("fetchbutton").onclick = function (){window.location.href = "/fetch/fetch.html"} 
 // FUNCTION CALLS
   document.getElementById("submitNewTranslation").onclick = addtranslation
     document.getElementById("ö").onclick = addö
@@ -34,7 +34,7 @@ async function addtranslation () {
 let translationjson = {
     "englishword": document.getElementById("englishword").value,
     "efikword": document.getElementById("efikword").value,
-    "context": document.getElementById("context").value
+    "context": document.getElementById("example").value
 
 }
 
