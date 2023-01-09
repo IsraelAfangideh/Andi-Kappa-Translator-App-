@@ -1,6 +1,7 @@
 // CONSTANTS
 
-const url = "http://18.222.31.44/"
+const url = "http://127.0.0.1:8080/"
+//"http://18.222.31.44/"
 //"http://3.19.55.28/"
 // const propernoun = document.getElementById("wordtype-").innerText
 
@@ -36,7 +37,7 @@ async function addtranslation () {
 let translationjson = {
     "englishword": document.getElementById("englishword").value,
     "efikword": document.getElementById("efikword").value,
-    "context": document.getElementById("example").value,
+    "example": document.getElementById("example").value,
     "authorid" :[localStorage.getItem("num")]
 }
 
