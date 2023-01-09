@@ -31,11 +31,13 @@ document.getElementById("fetchbutton").onclick = function (){window.location.hre
 async function addtranslation () {
 
 
+  
+
 let translationjson = {
     "englishword": document.getElementById("englishword").value,
     "efikword": document.getElementById("efikword").value,
-    "context": document.getElementById("example").value
-
+    "context": document.getElementById("example").value,
+    "authorid" :[localStorage.getItem("num")]
 }
 
 let tss = JSON.stringify(translationjson)

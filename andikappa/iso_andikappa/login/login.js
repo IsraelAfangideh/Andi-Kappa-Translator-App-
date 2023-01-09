@@ -1,6 +1,13 @@
 const url = "http://127.0.0.1:8080/"
 
 document.getElementById("loginbutton").onclick = login
+document.getElementById("registerbutton").onclick = redirect
+
+function redirect (){
+
+ window.location.href = '../register/register.html'
+
+}
 
 async function login (){
     let username = document.getElementById("username").value
@@ -13,9 +20,10 @@ async function login (){
 
     }//remember variables must match Java Object
 
-    console.log(authorjson)
+    
 
-    let response = await fetch(url + "author/login",{
+   let response = await fetch(url + "author/login",{
+   
 
         method: "POST",
         body: JSON.stringify(authorjson),
@@ -30,7 +38,16 @@ async function login (){
         let data = await response.json()
 
        console.log(data)
-        
+
+       document.getElementById("alert").innerText = ("Welcome " + data[0].firstname)
+
+       
+
+       localStorage.setItem("num", data[0].userid)
+
+
+       window.location.href = '../fetch/fetch.html'
+               
     }else{
         alert("Failed to login, try again")
        

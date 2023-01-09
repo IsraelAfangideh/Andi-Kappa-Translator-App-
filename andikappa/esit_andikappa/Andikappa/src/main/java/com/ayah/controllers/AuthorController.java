@@ -54,7 +54,7 @@ public class AuthorController {
         System.out.println(possibleUser);
         if(!possibleUser.get().isEmpty()){
     List<Author>  gooduser = possibleUser.get();
-        return ResponseEntity.accepted().body("Welcome "+ gooduser.get(0).getFirstname() + " :) ");
+        return ResponseEntity.accepted().body(possibleUser);
                 //("Welcome " + u.getFirstname() + u.getDOB()  + " you have: " +  u.getCred() + " cred");
         }
             return ResponseEntity.status(403).body("Incorrect Username || Password");

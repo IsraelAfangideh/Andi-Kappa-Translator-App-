@@ -10,15 +10,13 @@
 
 <link rel="stylesheet" href="../global.css">
 
-<div>
 
-    
-</div>
 </head>
 <body>
   <div id="navbar"></div>
     <div class="container my-5">
         <div class="row h-100 justify-content-center align-items-center">
+          <h1 id="alert"></h1>
           <form style="max-width: 400px;">
             <form>
                 <div class="form-group">
@@ -42,13 +40,16 @@
       <div class="container my-5">
         <div class="row h-100 justify-content-center align-items-center">
           <form style="max-width: 400px;">
-        <button type="submit" class="btn btn-outline-primary">Create New Account</button>
+        <button type="button" id="registerbutton" class="btn btn-outline-primary">Create New Account</button>
       </form>
       </div>
       </div>
       <script>
         fetch("/navbar/navbar.html").then(response => response.text()).then(data => {document.getElementById("navbar").innerHTML = data;});
+        
       </script>
-<script src="login.js"></script>
+<script src="login.js" defer></script>
+
+<script src="../navbar/navbar.js" defer></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
 </form>
 <div id="results"></div>
 
-<p>Didnt find what you were looking for? </p><a href="../post/add.html">Add a new Translation</a>
+<p id="notfound">Didnt find what you were looking for? </p><a href="../post/add.html">Add a new Translation</a>
     </div>
         
       
@@ -44,8 +44,10 @@
   </center> -->
   <script>
     fetch("/navbar/navbar.html").then(response => response.text()).then(data => {document.getElementById("navbar").innerHTML = data;});
+    fetch("/navbar/navbar.html")
   </script>
-    <script src="../experiment/index.js"></script>
+    <script src="fetch.js"></script>
+    <script src="../navbar/navbar.js"></script>
   </body>
 
 </html>

@@ -2,15 +2,21 @@
 
 const url = "http://18.222.31.44/"
 
+
+//Auth
+console.log(localStorage.length)
+if(localStorage.length == 0){
+    window.location.href = "../login/login.html"
+}
 const resultsElement = document.getElementById('results');
 
 
 
 document.getElementById('Translate').onclick = getefikword
 
-console.log(efikword)
 async function getefikword(){
     let efikword = document.getElementById("word").value
+
     resultsElement.innerHTML = ''
 let response = await fetch (url + "fetch/" + efikword,{
       
@@ -31,5 +37,7 @@ for (let i = 0; i < data.length; i++) {
   `;
   resultsElement.appendChild(card);
 }
+}else{
+    
 }
 }
