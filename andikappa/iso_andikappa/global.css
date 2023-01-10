@@ -8,6 +8,20 @@ body {
     border: red solid 3px;
   }
 
-
+  .tool-tip {
+    /* Add some styling for the tool tip */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    /* Hide the tool tip by default */
+    display: none;
+  }
+  
 
 /* The theme is blue(primary) and gold(secondary)  */
