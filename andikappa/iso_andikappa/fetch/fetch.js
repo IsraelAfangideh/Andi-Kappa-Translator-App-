@@ -17,6 +17,8 @@ const excuseElement = document.getElementById("notfound");
 document.getElementById('Translate').onclick = getefikword
 
 async function getefikword(){
+    event.preventDefault();
+
     let efikword = document.getElementById("word").value
 
     resultsElement.innerHTML = ''
@@ -37,7 +39,7 @@ for (let i = 0; i < data.length; i++) {
       
   })
 
-  
+
   let author = await authorresponse.json()
   console.log(author)
   const card = document.createElement('div');
@@ -46,9 +48,17 @@ for (let i = 0; i < data.length; i++) {
     <h2>${word.englishword}</h2>
     <p>${word.efikword}</p>
     <p>${word.example}</p>
-    <a>Author = ${author.firstname} ${author.surname}</a>
+    <p>Author: <a class = "authorinfo" href = "http://127.0.0.1:8080/author/fetch/${author.userid}" title = 'cred = ${author.cred} sex = ${author.sex}'>${author.firstname} ${author.surname}</a></p>
   `;
   resultsElement.appendChild(card);
+
+  function savelocalstorage(){
+    localStorage.setItem('clickedauthorid', author.userid)
+  }
+  const authorLink = document.querySelector('.authorinfo');
+  authorLink.addEventListener('click', savelocalstorage);
+
+  console.log(localStorage.getItem('clickedauthorid'))
 }
 }if (resultsElement.innerText == ''){
     document.getElementById("notfound").innerText = "Translation doesn't exist :("
