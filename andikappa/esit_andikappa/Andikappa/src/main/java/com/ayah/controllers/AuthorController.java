@@ -41,7 +41,7 @@ public class AuthorController {
 
 
 
-        return ResponseEntity.accepted().body("Welcome:" + author);
+        return ResponseEntity.accepted().body(author);
     }
 
 // Login Method
