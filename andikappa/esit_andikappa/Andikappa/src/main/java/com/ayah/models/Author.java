@@ -34,7 +34,7 @@ public class Author {
 
    @NotNull
    @Column(nullable = false)
-   @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="MM-dd-yyyy")
+   @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
    private LocalDate DOB;
 
    @Enumerated(EnumType.STRING)
