@@ -1,10 +1,16 @@
 package com.ayah.models;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sun.istack.NotNull;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.stereotype.Component;
 
 
@@ -22,6 +28,12 @@ import org.springframework.stereotype.Component;
 		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private int termid;
+
+	@CreationTimestamp
+	private LocalDateTime createDateTime;
+
+	@UpdateTimestamp
+	private LocalDateTime updateDateTime;
 		
 		@Column(nullable = false)
 		@NotNull

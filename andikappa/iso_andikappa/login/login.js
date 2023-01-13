@@ -5,7 +5,7 @@ document.getElementById("registerbutton").onclick = redirect
 
 function redirect (){
 
- window.location.href = '../register/register.html'
+ window.location.href = '../signup/signup.html'
 
 }
 
