@@ -28,38 +28,46 @@ async function signup (){
     
     
 
-   let response = await fetch(url + "author/register",{
-   
-
-        method: "POST",
-        body: JSON.stringify(authorjson),
-        headers: {
-            'Content-Type': 'application/json'
+    try {
+        let response = await fetch(url + "author/register",{
+          method: "POST",
+          body: JSON.stringify(authorjson),
+          headers: {
+              'Content-Type': 'application/json'
           },
-    })
+        });
+        console.log(response.status)
 
-    console.log(response.status)
+        if (response.status === 202){
+            let author  = await response.json()
+    
+           console.log(author)
+    
+           document.getElementById("alert").innerText = ("Welcome " + author.firstname)
+    
+           
+    
+           localStorage.setItem("num", author.userid)
+    
+    
+           window.location.href = '../fetch/fetch.html'
+                   
+        }else if(response.status === 409){
+    
+            document.getElementById("alert").innerText = ("Username " + username + " Is already Taken")
+    
+        }else{
+            alert("Failed to login, try again")
+           
+        }
+        // Do something with the successful response data
+      } catch (error) {
+            if(error == "TypeError: Failed to fetch")
+        document.getElementById("alert").innerText = ("The back-end of this application is unavailable, Please notify israelafangideh@gmail.com or try again later")
+        document.getElementById("alert").style = ("color: red;")
+        console.error('Error:', error);
+      }
+      
 
-    if (response.status === 202){
-        let author  = await response.json()
-
-       console.log(author)
-
-       document.getElementById("alert").innerText = ("Welcome " + author.firstname)
-
-       
-
-       localStorage.setItem("num", author.userid)
-
-
-       window.location.href = '../fetch/fetch.html'
-               
-    }else if(response.status === 409){
-
-        document.getElementById("alert").innerText = ("Username " + username + " Is already Taken")
-
-    }else{
-        alert("Failed to login, try again")
-       
-    }
+   
 }
