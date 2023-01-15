@@ -50,7 +50,7 @@ async function signup (){
            localStorage.setItem("num", author.userid)
     
     
-           window.location.href = '../fetch/fetch.html'
+           window.location.href = '/fetch.html'
                    
         }else if(response.status === 409){
     

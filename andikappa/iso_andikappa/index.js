@@ -6,7 +6,7 @@ const url = "http://127.0.0.1:8080/"
 //Auth
 console.log(localStorage.length)
 if(localStorage.length == 0){
-    window.location.href = "../login/login.html"
+    window.location.href = "/login.html"
 }
 const resultsElement = document.getElementById('results');
 const excuseElement = document.getElementById("notfound");

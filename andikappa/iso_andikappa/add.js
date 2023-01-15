@@ -7,7 +7,7 @@ const url = "http://127.0.0.1:8080/"
 
 //Redirects
 document.getElementById("addbutton").onclick = function (){window.location.href = "add.html"} 
-document.getElementById("fetchbutton").onclick = function (){window.location.href = "/fetch/fetch.html"} 
+document.getElementById("fetchbutton").onclick = function (){window.location.href = "/fetch.html"} 
 // FUNCTION CALLS
   document.getElementById("submitNewTranslation").onclick = addtranslation
     document.getElementById("ö").onclick = addö

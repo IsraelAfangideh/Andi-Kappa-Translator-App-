@@ -5,7 +5,7 @@ document.getElementById("registerbutton").onclick = redirect
 
 function redirect (){
 
- window.location.href = '../signup/signup.html'
+ window.location.href = '/signup.html'
 
 }
 
@@ -46,7 +46,7 @@ async function login (){
        localStorage.setItem("num", data[0].userid)
 
 
-       window.location.href = '../fetch/fetch.html'
+       window.location.href = '/fetch.html'
                
     }else{
         alert("Failed to login, try again")
