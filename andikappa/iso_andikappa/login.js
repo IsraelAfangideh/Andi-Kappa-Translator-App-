@@ -1,4 +1,5 @@
-const url = "http://127.0.0.1:8080/"
+const url = "http://3.145.155.9/"
+//"http://127.0.0.1:8080/"
 
 document.getElementById("loginbutton").onclick = login
 document.getElementById("registerbutton").onclick = redirect
