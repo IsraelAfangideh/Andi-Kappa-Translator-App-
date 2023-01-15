@@ -10,6 +10,10 @@ function redirect (){
 
 }
 
+if (localStorage.getItem('authorized') =='null' ){
+    document.getElementById("alert").innerText = "please login or sign up in order to access the app"
+}
+
 async function login (){
     let username = document.getElementById("username").value
     let password = document.getElementById("password").value
@@ -45,9 +49,11 @@ async function login (){
        
 
        localStorage.setItem("num", data[0].userid)
+       localStorage.setItem("authorized", 'authorized')
 
 
-       window.location.href = '/fetch.html'
+
+       window.location.href = '/index.html'
                
     }else{
         alert("Failed to login, try again")
