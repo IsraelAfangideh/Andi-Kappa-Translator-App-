@@ -42,31 +42,34 @@
         margin: 5px 0;
       }
     </style>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
   </head>
   <body>
+    <div id="navbar"></div>
     <div class="container mt-5">
       <div class="card">
         <div class="card-header bg-primary text-white">
-          <h3>Profile</h3>
+          <h3 id="profileheader">Profile</h3>
         </div>
         <div class="card-body">
           <div class="attribute">
             <span class="label font-weight-bold">First Name:</span>
-            <input class="form-control form-control-plaintext value" type="text" value="John" readonly>
+            <input class="form-control form-control-plaintext value" id="firstname" type="text" value="" readonly>
           </div>
           <div class="attribute">
             <span class="label font-weight-bold">Last Name:</span>
-            <input class="form-control form-control-plaintext value" type="text" value="Doe" readonly>
+            <input class="form-control form-control-plaintext value" id="lastname" type="text" value="Doe" readonly>
           </div>
           <div class="attribute">
             <span class="label font-weight-bold">Cred:</span>
-            <input class="form-control form-control-plaintext value" type="number" value="100" readonly>
+            <input class="form-control form-control-plaintext value" id = "cred" type="number" value="100" readonly>
+            <span class="label font-weight-bold">Sex:</span>
+            <input class="form-control form-control-plaintext value" id="sex" type="text" value="100" readonly>
           </div>
-          <div class="results mt-4">
+          <!-- <div class="results mt-4">
             <h4>Translations</h4>
             <div class="result d-flex flex-column align-items-center" style="word-break: break-all">
               <div class="result-item">
@@ -80,13 +83,20 @@
               <div class="result-item">
                 <span class="label font-weight-bold">Context:</span>
                 <textarea class="form-control form-control-plaintext value" type="text" value="" readonly style="max-width: 200px" cols="30" rows="10">The word for God or a god</textarea>
-              </div>
+              </div> -->
             </div>
             <!-- Add additional result elements for each translation the user owns -->
           </div>
         </div>
       </div>
     </div>
+    <script src="profile.js"></script>
+    <script>
+      fetch("/navbar.html").then(response => response.text()).then(data => {document.getElementById("navbar").innerHTML = data;});
+      fetch("/navbar.html")
+    </script>
+      <script src="/auth.js"></script>
+      <script src="/navbar.js"></script>
   </body>
   
   

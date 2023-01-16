@@ -49,18 +49,35 @@ for (let i = 0; i < data.length; i++) {
     <h2>${word.englishword}</h2>
     <p>${word.efikword}</p>
     <p>${word.example}</p>
-    <p>Author: <a class = "authorinfo" href = "http://127.0.0.1:8080/author/fetch/${author.userid}" title = 'cred = ${author.cred} sex = ${author.sex}'>${author.firstname} ${author.surname}</a></p>
+    <p>Author: <a class = "authorinfo" href = "#" data-userid=${author.userid} data-cred=${author.cred} data-sex=${author.sex} title = 'cred = ${author.cred} sex = ${author.sex}'>${author.firstname} ${author.surname}</a></p>
+
   `;
   resultsElement.appendChild(card);
 
-  function savelocalstorage(){
-    localStorage.setItem('clickedauthorid', author.userid)
-  }
-  const authorLink = document.querySelector('.authorinfo');
-  authorLink.addEventListener('click', savelocalstorage);
+  // function savelocalstorage(){
+  //   localStorage.setItem('clickedauthorid', author.userid)
+  //   window.location.href = '/profile.html'
+  // }
+  // const authorLink = document.querySelector('.authorinfo');
+  // authorLink.addEventListener('click', savelocalstorage);
 
-  console.log(localStorage.getItem('clickedauthorid'))
+  // console.log(localStorage.getItem('clickedauthorid'))
+
 }
+resultsElement.addEventListener('click', function (event) {
+  if (event.target.classList.contains('authorinfo')) {
+    const cred = event.target.dataset.cred;
+    const sex = event.target.dataset.sex;
+    const author = event.target.dataset.userid;
+    localStorage.setItem('clickedauthorid', author);
+    localStorage.setItem('clickedauthorcred',cred);
+    localStorage.setItem('clickedauthorsex',sex);
+    window.location.href = '/profile.html';
+  }
+});
+
+
+
 }if (resultsElement.innerText == ''){
     document.getElementById("notfound").innerText = "Translation doesn't exist :("
 }
