@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa782127-16b3-487d-ab91-1d049b37aa9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../iso_andikappa/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iso_andikappa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iso_andikappa/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iso_andikappa/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iso_andikappa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../iso_andikappa/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

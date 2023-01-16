@@ -50,6 +50,7 @@ async function login (){
 
        localStorage.setItem("num", data[0].userid)
        localStorage.setItem("authorized", 'authorized')
+       localStorage.setItem('clickedauthorid', data[0].userid);
 
 
 
