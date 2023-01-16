@@ -54,15 +54,6 @@ for (let i = 0; i < data.length; i++) {
   `;
   resultsElement.appendChild(card);
 
-  // function savelocalstorage(){
-  //   localStorage.setItem('clickedauthorid', author.userid)
-  //   window.location.href = '/profile.html'
-  // }
-  // const authorLink = document.querySelector('.authorinfo');
-  // authorLink.addEventListener('click', savelocalstorage);
-
-  // console.log(localStorage.getItem('clickedauthorid'))
-
 }
 resultsElement.addEventListener('click', function (event) {
   if (event.target.classList.contains('authorinfo')) {

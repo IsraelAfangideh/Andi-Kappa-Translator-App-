@@ -7,8 +7,8 @@ const url = "http://3.145.155.9/"
 // const propernoun = document.getElementById("wordtype-").innerText
 
 //Redirects
-document.getElementById("addbutton").onclick = function (){window.location.href = "add.html"} 
-document.getElementById("fetchbutton").onclick = function (){window.location.href = "/fetch.html"} 
+document.getElementById("addbutton").onclick = function (){window.location.href = "/add.html"} 
+document.getElementById("fetchbutton").onclick = function (){window.location.href = "/index.html"} 
 // FUNCTION CALLS
   document.getElementById("submitNewTranslation").onclick = addtranslation
     document.getElementById("ö").onclick = addö
