@@ -71,6 +71,7 @@ resultsElement.addEventListener('click', function (event) {
 
 }if (resultsElement.innerText == ''){
     document.getElementById("notfound").innerText = "Translation doesn't exist :("
+    document.getElementById("addit").innerText = "Add It"
 }
 }
 
